@@ -1,0 +1,14 @@
+file_format: "1"
+id: ergotravel
+name: ergotravel
+type: shield
+requires:
+  - seeeduino_xiao_ble
+features:
+  - keys
+siblings:
+  - ergotravel_left
+  - ergotravel_right
+outputs:
+  - usb
+  - ble
