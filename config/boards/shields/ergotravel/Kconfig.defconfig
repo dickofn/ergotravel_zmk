@@ -1,4 +1,4 @@
-if SHIELD_ERGOTRAVEL_RIGHT
+if SHIELD_ERGOTRAVEL_LEFT
     config ZMK_KEYBOARD_NAME
         default "ergotravel"
     config ZMK_SPLIT_BLE_ROLE_CENTRAL
