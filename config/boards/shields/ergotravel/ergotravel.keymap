@@ -42,7 +42,7 @@
 
             bindings = <
 &kp GRAVE  &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5    &kp C_BRI_INC       &kp C_VOL_UP  &kp NUMBER_6 &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp DEL         
-&kp LGUI   &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &trans       &trans          &kp C_BRI_DEC       &kp C_VOL_DN  &trans       &trans        &kp UP        &trans        &trans        &kp BACKSLASH  
+&trans     &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &trans       &trans          &kp C_BRI_DEC       &kp C_VOL_DN  &trans       &trans        &kp UP        &trans        &trans        &kp BACKSLASH  
 &trans     &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &trans       &trans          &kp DEL             &kp DEL       &trans       &kp LEFT      &kp DOWN      &kp RIGHT     &trans        &trans 
 &trans     &trans       &trans       &trans       &trans       &kp BSPC        &trans              &trans        &kp BSPC     &trans        &kp HOME      &kp PAGE_DOWN &kp PAGE_UP   &kp END           
             >;
@@ -51,10 +51,10 @@
         num_layer {
             
             bindings = <
-&trans          &kp F1        &kp F2        &kp F3          &kp F4          &kp F5         &kp F11       &kp F12  &kp F6    &kp F7      &kp F8      &kp F9      &kp F10      &kp BACKSLASH         
-&trans          &kp F6        &kp F7        &kp F8          &kp F9          &kp F10        &kp INSERT    &trans   &trans    &trans      &trans      &trans      &trans       &trans
-&trans          &bt BT_CLR    &bt BT_PRV    &bt BT_NXT      &trans          &bootloader    &trans        &trans   &trans    &trans      &trans      &trans      &trans       &trans
-&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &trans         &trans        &trans   &trans    &trans      &trans      &trans      &trans       &trans   
+&kp GRAVE       &kp F1        &kp F2         &kp F3        &kp F4          &kp F5         &kp F11       &kp F12  &kp F6    &kp F7      &kp F8      &kp F9      &kp F10      &kp BACKSLASH         
+&trans          &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4   &kp INSERT    &trans   &trans    &trans      &trans      &trans      &trans       &trans
+&trans          &bt BT_CLR    &bt BT_PRV     &bt BT_NXT    &trans          &bootloader    &trans        &trans   &trans    &trans      &trans      &trans      &trans       &trans
+&trans          &trans        &trans         &trans        &trans          &trans         &trans        &trans   &trans    &trans      &trans      &trans      &trans       &trans   
             >;
         };
 
