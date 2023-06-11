@@ -2,10 +2,14 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+      # add source doc: https://zmk.dev/docs/features/beta-testing
+      # LED RGB status: https://github.com/zmkfirmware/zmk/pull/1475
+    - name: xoffio-zmk
+      url-base: https://github.com/Xoffio/zmk
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: xoffio-zmk
+      revision: xo-status-fx
       import: app/west.yml
   self:
     path: config
