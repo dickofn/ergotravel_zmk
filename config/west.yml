@@ -5,7 +5,7 @@ manifest:
       # add source doc: https://zmk.dev/docs/features/beta-testing
       # LED RGB status: https://github.com/zmkfirmware/zmk/pull/1475
     - name: xoffio-zmk
-      url-base: https://github.com/Xoffio/zmk
+      url-base: https://github.com/Xoffio/
   projects:
     - name: zmk
       remote: xoffio-zmk
