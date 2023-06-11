@@ -11,12 +11,8 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
-#define NAV  1
-#define NUM  2
-#define FUN  3
-#define SYM  4
-#define MEDIA  5
-#define BLU 6
+#define NUM  1
+#define FUN  2
 
 &mt {
   quick-tap-ms = <100>;
@@ -31,72 +27,31 @@
 
         default_layer {
             bindings = <
-&kp ESC     &kp Q       &kp W       &kp E    &kp R     &kp T     &kp MINUS                &kp EQUAL      &kp Y       &kp U      &kp I      &kp O        &kp P      &kp BSPC
-&kp TAB     &kp A       &kp S       &kp D    &kp F     &kp G     &kp LBKT                 &kp RBKT      &kp H       &kp J      &kp K      &kp L        &kp SEMI    &kp SQT
-&kp LSHFT   &kp Z       &kp X       &kp C    &kp V     &kp B     &kp RET                  &kp RET       &kp N       &kp M      &kp COMMA  &kp DOT      &kp FSLH    &kp RSHFT 
-&kp LCTRL   &mo 1       &kp LGUI    &kp LALT &mo 2     &kp SPACE &trans                   &trans        &kp SPACE   &mo 1      &kp LEFT   &kp UP       &kp DOWN    &kp RIGHT
-            >;
-        };
-
-        nav_layer {
-
-            bindings = <
-&kp GRAVE  &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5    &kp C_BRI_INC       &kp C_VOL_UP  &kp NUMBER_6 &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp DEL         
-&trans     &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &trans       &trans          &kp C_BRI_DEC       &kp C_VOL_DN  &trans       &trans        &kp UP        &trans        &trans        &kp BACKSLASH  
-&trans     &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &trans       &trans          &kp DEL             &kp DEL       &trans       &kp LEFT      &kp DOWN      &kp RIGHT     &trans        &trans 
-&trans     &trans       &trans       &trans       &trans       &kp BSPC        &trans              &trans        &kp BSPC     &trans        &kp HOME      &kp PAGE_DOWN &kp PAGE_UP   &kp END           
+&kp ESC    &kp Q         &kp W         &kp E         &kp R         &kp T        &kp MINUS                 &kp EQUAL     &kp Y         &kp U        &kp I         &kp O          &kp P         &kp BSPC
+&kp TAB    &kp A         &kp S         &kp D         &kp F         &kp G        &kp LBKT                  &kp RBKT      &kp H         &kp J        &kp K         &kp L          &kp SEMI      &kp SQT
+&kp LSHFT  &kp Z         &kp X         &kp C         &kp V         &kp B        &kp RET                   &kp RET       &kp N         &kp M        &kp COMMA     &kp DOT        &kp FSLH      &kp RSHFT 
+&kp LCTRL  &mo 1         &kp LGUI      &kp LALT      &mo 2         &kp SPACE    &trans                    &trans        &kp SPACE     &mo 1        &kp LEFT      &kp UP         &kp DOWN      &kp RIGHT
             >;
         };
 
         num_layer {
-            
             bindings = <
-&kp GRAVE       &kp F1        &kp F2         &kp F3        &kp F4          &kp F5         &kp F11       &kp F12  &kp F6    &kp F7      &kp F8      &kp F9         &kp F10      &kp BACKSLASH         
-&trans          &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4   &kp INSERT    &trans   &trans    &trans      &kp UP      &trans         &trans       &kp BACKSLASH
-&trans          &bt BT_CLR    &bt BT_PRV     &bt BT_NXT    &trans          &bootloader    &kp DEL       &kp DEL  &trans    &kp LEFT    &kp DOWN    &kp RIGHT      &trans       &trans 
-&trans          &trans        &trans         &trans        &trans          &kp BSPC       &trans        &trans   &kp BSPC  &trans      &kp HOME    &kp PAGE_DOWN  &kp PAGE_UP  &kp END      
+&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp C_BRI_INC            &kp C_VOL_UP  &kp NUMBER_6  &kp NUMBER_7 &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0  &kp DEL         
+&trans     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans        &trans        &kp C_BRI_DEC            &kp C_VOL_DN  &trans        &trans       &kp UP        &trans         &trans        &kp BACKSLASH  
+&trans     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans        &trans        &kp DEL                  &kp DEL       &trans        &kp LEFT     &kp DOWN      &kp RIGHT      &trans        &trans 
+&trans     &trans        &trans        &trans        &trans        &kp BSPC      &trans                   &trans        &kp BSPC      &trans       &kp HOME      &kp PAGE_DOWN  &kp PAGE_UP   &kp END           
             >;
         };
 
         fun_layer {
-            
             bindings = <
-&kp F12        &kp F7         &kp F8         &kp F9         &kp PSCRN           &trans         &trans         &trans         &trans         &trans
-&kp F11        &kp F4         &kp F5         &kp F6         &kp SYSREQ          &trans         &kp LSHFT      &kp LCTRL      &kp LALT       &kp LGUI
-&kp F10        &kp F1         &kp F2         &kp F3         &kp PAUSE_BREAK     &trans         &trans         &trans         &trans         &trans
-&kp ESC        &kp SPACE      &kp TAB        &bootloader                                       &bootloader    &trans         &trans         &trans
-            >;
-        };
-
-        sym_layer {
-            
-            bindings = <
-&kp LS(LBKT)   &kp LS(N7)     &kp LS(N8)     &kp LS(N9)     &kp LS(RBKT)        &trans         &trans         &trans         &trans         &trans
-&kp LS(SEMI)   &kp LS(N4)     &kp LS(N5)     &kp LS(N6)     &kp LS(EQUAL)       &trans         &kp LSHFT      &kp LCTRL      &kp LALT       &kp LGUI
-&kp LS(GRAVE)  &kp LS(N1)     &kp LS(N2)     &kp LS(N3)     &kp LS(BSLH)        &trans         &trans         &trans         &trans         &trans
-&kp LS(PERIOD) &kp LS(N0)     &kp LS(MINUS)  &bootloader                                       &bootloader    &trans         &trans         &trans
-            >;
-        };
-
-        media_layer {
-            
-            bindings = <
-&trans         &trans         &trans         &trans         &trans              &trans         &trans         &trans         &trans         &trans
-&kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      &trans              &kp K_PREV     &kp K_VOL_DN   &kp K_VOL_UP   &kp K_NEXT     &trans
-&trans         &trans         &trans         &trans         &trans              &trans         &trans         &trans         &trans         &trans
-&trans         &trans         &trans         &bootloader                                       &bootloader    &kp K_STOP2    &kp K_PP       &kp K_MUTE
-            >;
-        };
-
-        blu_layer {
-            
-            bindings = <
-&trans         &trans         &trans         &trans         &trans              &bt BT_CLR     &trans         &trans         &trans         &trans
-&trans         &bt BT_SEL 3   &bt BT_SEL 4   &trans         &trans              &trans         &bt BT_PRV     &bt BT_NXT     &trans         &trans
-&trans         &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &trans              &trans         &trans         &trans         &trans         &trans
-&trans         &trans         &trans         &trans         &trans                             &trans         &trans         &trans         &trans
+&kp GRAVE  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F11                  &kp F12       &kp F6         &kp F7      &kp F8        &kp F9          &kp F10       &kp BACKSLASH         
+&trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp INSERT               &trans        &trans         &trans      &kp UP        &trans          &trans        &kp BACKSLASH
+&trans     &bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &trans        &bootloader   &kp DEL                  &kp DEL       &trans         &kp LEFT    &kp DOWN      &kp RIGHT       &trans        &trans 
+&trans     &trans        &trans        &trans        &trans        &kp BSPC      &trans                   &trans        &kp BSPC       &trans      &kp HOME      &kp PAGE_DOWN   &kp PAGE_UP   &kp END      
             >;
         };
     };
 };
  
+
