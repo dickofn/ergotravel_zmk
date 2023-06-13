@@ -22,8 +22,6 @@
   tapping-term-ms = <180>;
 };
 
-&led_strip { chain-length = <1>; };
-
 / {
     keymap {
         compatible = "zmk,keymap";
